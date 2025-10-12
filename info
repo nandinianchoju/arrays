@@ -1,0 +1,42 @@
+NumPy Arrays
+NumPy arrays are a part of the NumPy library, which is a powerful tool for numerical computing in Python.
+These arrays are designed for high-performance operations on large volumes of data and support multi-dimensional arrays and matrices. 
+This makes them ideal for complex mathematical computations and large-scale data processing.
+
+Features:
+Multi-dimensional support: NumPy arrays can handle more than one dimension, making them suitable for matrix operations and more complex mathematical constructs.
+Broad broadcasting capabilities: They can perform operations between arrays of different sizes and shapes, a feature known as broadcasting.
+Efficient storage and processing: NumPy arrays are stored more efficiently than Python lists and provide optimized performance for numerical operations.
+
+Python Arrays
+In Python, array is a collection of items stored at contiguous memory locations.
+The idea is to store multiple items of the same type together.
+Unlike Python lists (can store elements of mixed types), arrays must have all elements of same type.
+Having only homogeneous elements makes it memory-efficient.
+
+Create an Array in Python
+Array in Python can be created by importing an array module. array( data_type , value_list ) is used to create array in Python with data type and value list specified in its arguments.
+
+Adding Elements to an Array
+Elements can be added to the Python Array by using built-in insert() function. 
+Insert is used to insert one or more data elements into an array. 
+Based on the requirement, a new element can be added at the beginning, end, or any given index of array.
+append() is also used to add the value mentioned in its arguments at the end of the Python array.
+
+Accessing Array Items
+In order to access the array items refer to the index number. 
+Use the index operator [ ] to access an item in a array in Python. The index must be an integer.
+
+emoving Elements from the Array
+Elements can be removed from the Python array by using built-in remove() function. 
+It will raise an Error if element doesn’t exist. Remove() method only removes the first occurrence of the searched element.
+To remove range of elements, we can use an iterator.
+pop() function can also be used to remove and return an element from the array.
+By default it removes only the last element of the array.
+To remove element from a specific position, index of that item is passed as an argument to pop() method.
+
+
+
+
+
+
