@@ -1,0 +1,37 @@
+# Method 1: using Python's built-in max()
+
+arr = [3, 1, 7, 4, 9, 2]
+
+largest = max(arr)
+
+print("Largest element:", largest)
+
+# Method 2: sort the array, pick the last element
+
+arr = [3, 1, 7, 4, 9, 2]
+
+arr.sort()           # sorts in ascending order
+largest = arr[-1]   # last element is the largest
+
+print("Largest element:", largest)
+
+# Method 3: loop through manually (best to explain in interviews)
+
+arr = [3, 1, 7, 4, 9, 2]
+
+largest = arr[0]          # assume first element is largest
+
+for num in arr:
+    if num > largest:
+        largest = num       # update if we find something bigger
+
+print("Largest element:", largest)
+
+some variation to find largest element
+1 Largest in a list of negatives easy
+2 Largest among user inputs easy
+3 Largest in each row of a 2D list medium
+4 Largest using a function medium
+5 Index of the largest element medium
+6 Largest without using index 0 as start tricky
+Handle empty list — don't crash if arr = []
