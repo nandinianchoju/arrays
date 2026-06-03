@@ -1,0 +1,39 @@
+# Method 1: Python's built-in min()
+
+arr = [3, 1, 7, 4, 9, 2]
+
+smallest = min(arr)
+
+print("Smallest element:", smallest)
+
+# Method 2: sort and pick first element
+
+arr = [3, 1, 7, 4, 9, 2]
+
+arr.sort()          # sorts ascending
+smallest = arr[0]  # first element is smallest
+
+print("Smallest element:", smallest)
+
+# Method 3: loop manually 
+
+arr = [3, 1, 7, 4, 9, 2]
+
+smallest = float('+inf')  # start higher than everything
+
+for num in arr:
+    if num < smallest:
+        smallest = num      # update if we find something smaller
+
+print("Smallest element:", smallest)
+
+
+a few variations 
+
+1 Smallest in a list of negatives
+2 Smallest and its index 
+3 Both smallest and largest in one loop 
+4 Smallest using a function + edge cases 
+Handle empty list · test on positives, negatives, single element
+5 Smallest in each row of a 2D list medium
+6 Second smallest — no sort, no built-ins tricky
