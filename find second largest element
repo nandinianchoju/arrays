@@ -1,0 +1,57 @@
+method 1
+code
+arr = [3, 1, 7, 4, 2, 9]
+
+unique = list(set(arr))   # remove duplicates first
+unique.sort()              # sort ascending
+
+second_smallest = unique[1]  # index 1 = second smallest
+
+print("Second smallest:", second_smallest)
+
+method 2
+arr = [3, 1, 7, 4, 2, 9]
+
+# Pass 1: find the smallest
+smallest = float('+inf')
+for num in arr:
+    if num < smallest:
+        smallest = num
+
+# Pass 2: find smallest that is NOT the smallest
+second = float('+inf')
+for num in arr:
+    if num != smallest and num < second:
+        second = num
+
+print("Second smallest:", second)
+
+method 3
+arr = [3, 1, 7, 4, 2, 9]
+
+smallest = float('+inf')
+second   = float('+inf')
+
+for num in arr:
+    if num < smallest:
+        second   = smallest   # old smallest becomes second
+        smallest = num
+    elif num < second and num != smallest:
+        second = num          # update second if qualifies
+
+print("Second smallest:", second)
+
+variations
+
+1. All duplicates — handle gracefully
+arr = [4, 4, 4, 4] → "No second smallest exists"
+2. Second smallest with its index 
+arr = [3, 1, 7, 4, 2, 9] → second smallest is 2 at index 4
+3. All four — smallest, 2nd smallest, largest, 2nd largest 
+arr = [3, 1, 7, 4, 2, 9] → in one single loop
+4 Second smallest using a function + edge cases 
+find_second_smallest(arr) — handle empty, single element, all duplicates
+5 Second smallest in each row of a 2D list 
+matrix = [[3,1,7],[9,2,4],[5,8,6]] → 3, 4, 6
+6 Kth smallest element (generalised) tricky
+arr = [3,1,7,4,2,9], k=3 → 3rd smallest is 3 · works for any k
